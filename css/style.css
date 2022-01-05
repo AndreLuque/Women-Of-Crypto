@@ -30,7 +30,7 @@ body {
     color: #fff;
 }
 .social-icons{
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .social-icons ul{
     list-style-type: none;
@@ -41,22 +41,63 @@ body {
     display: inline;
     margin-right: 15px;
 }
-.logo{
-    padding-top: 30px;
-    text-align: center;
-}
-.logo img{
+
+/* .logo img{
     height:450px;
+} */
+/* .logo-gif{
+    border-radius: 50%;
+    width: 525px;
+    height: 525px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: -399px;
 }
+.logo-bg{
+    display: block;
+    text-align: center;
+    margin: auto;
+    height: 480px;
+    padding-left: 30px;
+
+} */
+
+.logo{
+    width: 600px;
+    height: 412px;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+}
+img.logo-gif {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    border-radius: 100%;
+    height: 450px;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    margin-top: 70px;
+}
+img.logo-bg {
+    width: 100%;
+}
+
 .about-us{
-    padding-top: 50px;
+    padding-top: 200px;
     padding-bottom: 50px;
 }
 .about-us p{
     text-align: center;
-    font-size: 16px;
-    line-height: 25px;
-    width: 90%;
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
     margin: 30px auto;
 }
 .giveaway{
@@ -143,7 +184,8 @@ body {
 }
 .roadmap-card h3{
     font-family: 'Alpenkreuzer';
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 30px;
     color: #FFFFFF;
     font-weight: 400;
     margin-top: 0;
@@ -220,14 +262,34 @@ body {
     margin-top: 100px;
 }
 */
-.roadline {
+/* .roadline {
     width: 40px;
     height: 800px;
     margin-top: 70px;
+} */
+.img3 {
+    position: relative;
+    top: -12px;
 }
-.roadline2{
+.img4 {
+    position: relative;
+    top: -24px;
+}
+.roadline {
+    width: 40px;
+    height: 800px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1;
+}
+/* .roadline2{
     width: 40px;
     margin-top: 190px;
+} */
+.roadline2 {
+    width: 40px;
+    z-index: 1;
+    /* margin-top: 190px; */
 }
 .roadmap-gv-bg1{
     background: url(../images/road-bg1.png);
@@ -243,6 +305,11 @@ body {
     align-items: center;
     text-align: center;
 }
+.roadmap-card-single-img .animated-img {
+    height: 250px;
+}
+
+
 .presale-two{
     margin-top: 90px;
 }
@@ -250,40 +317,91 @@ body {
     margin-top: 130px;
 }
 .presale-three{
-    margin-top: 180px !important;
+    margin-top: 165px !important;
 }
 .live-one-img{
-    margin-top: 100px;
-}
-.live-two{
-    margin-top: 290px;
-}
-.live-two-img{
     margin-top: 150px;
 }
+.live-two{
+    margin-top: 135px;
+}
+.live-two-img{
+    margin-top: 70px;
+}
 .live-two-img img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 .live-three{
-    margin-top: 220px;
+    margin-top: 70px;
 }
 .live-three-img{
     margin-top: 200px;
 }
 .live-four{
-    margin-top: 240px !important;
+    margin-top: 190px !important;
 }
 .live-four-img{
     margin-top: 50px;
 }
 .live-four-img img{
-    width: 100% !important;
+    width: 70% !important;
+    margin: auto;
 }
-.roadmap-bg{
+.live-five{
+    margin-top: 255px;
+}
+
+.live-five-img{
+    margin-top: 140px;
+}
+
+.live-five-img img{
+    width: 70%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.men-one{
+    margin-top: 95px;
+}
+.baby-two-img{
+    margin-top: 200px;
+}
+.baby-two-img img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* .roadmap-bg{
     width: 40px;
     margin: auto;
+} */
+.roadmap-bg {
+    width: 40px;
+    margin: auto;
+    position: relative;
+    margin-top: 70px;
+}
+.timeline {
+    position: absolute;
+    background: #FAC486;
+    width: 12px;
+    /* height: 723px; */
+    transition: linear 4s ease-in;
+    top: 40px;
+    left: 14px;
+    z-index: 2;
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: 2;
 }
 .roadmap-bg:before {
     background: #FAC486;
@@ -298,7 +416,7 @@ body {
     top: 109px;
     left: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 99;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -308,10 +426,34 @@ body {
     height: 723px;
     transition: height 4s ease-in;
 }
-.roadmap-bg2{
+/* .roadmap-bg2{
     width: 40px;
     margin: auto;
     position: relative;
+} */
+.roadmap-bg2 {
+    width: 40px;
+    margin: auto;
+    position: relative;
+    margin-top: 190px;
+}
+.timeline2 {
+    position: absolute;
+    background: #FAC486;
+    width: 12px;
+    /* height: 723px; */
+    transition: linear 4s ease-in;
+    top: 39px;
+    left: 14px;
+    z-index: 2;
+}
+.icons2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available;
+    position: absolute;
+    z-index: 3;
 }
 .roadmap-bg2:before {
     background: #FAC486;
@@ -326,14 +468,14 @@ body {
     top: 232px;
     left: 0;
     right: 0;
-    z-index: 99999;
+    z-index: 99;
     justify-content: center;
     align-items: center;
     display: flex;
     margin: auto;
 }
 .darkHeader2:before {
-    height: 1398px;
+    height: 1910px;
     transition: height 6s ease-in;
 }
 .mt-0 h3{
@@ -360,7 +502,7 @@ body {
     background: url(../images/road-bg3.png);
     padding: 39px 23px;
     padding-top: 20px;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 .py-right{
@@ -425,8 +567,8 @@ body {
     text-align: center;
 }
 .team-member .team-box .team-img{
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 80%;
 }
 .team-member .team-box h3{
@@ -742,10 +884,46 @@ body {
     display: block;
 }
 @media only screen and (max-width: 767px){
-    .logo img {
+    /* .logo img {
         height: auto;
         width: 100%;
+   } */
+   /* .logo-bg{
+        height: 235px;
+        padding-left: 0;
    }
+   .logo-gif{
+        width: 250px;
+        height: 250px;
+        margin-top: -190px;
+   } */
+    .logo {
+        width: 300px;
+        height: auto;
+        margin: auto;
+        position: relative;
+        margin-top: 50px;
+    }
+    img.logo-gif {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        /* width: 100%; */
+        /* height: 100%; */
+        border-radius: 100%;
+        height: 220px;
+        width: 220px;
+        margin: auto;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .about-us{
+        padding-top: 80px;
+    }
+
+
     .about-us p {
         text-align: center;
         font-size: 14px;
@@ -805,6 +983,7 @@ body {
         height: 150px;
         margin: 0px auto;
         object-fit: contain;
+        margin-bottom: 20px;
    }
     .mobile-roadmap{
         text-align: center;
@@ -873,6 +1052,25 @@ body {
    }
 }
 @media (min-width: 768px) and (max-width: 991px){
+
+    /* .logo-gif {
+        border-radius: 50%;
+        width: 370px;
+        height: 370px;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-left: 124px;
+        margin-top: -290px;
+    }
+    .logo-bg{
+        height: 350px;
+        padding-left: 0;
+    } */
+    .about-us{
+        padding-top: 150px;
+    }
+
     .join-discord img{
         width: 100%;
    }
@@ -881,41 +1079,68 @@ body {
    }
     .roadmap-card h3{
         font-size: 14px;
+        line-height: 24px;
    }
     .roadmap-sl-bg1{
         background-size: 100% 100%;
    }
     .presale-two {
-        margin-top: 0px;
+        margin-top: -25px;
    }
     .presale-three {
-        margin-top: 150px !important;
+        margin-top: 130px !important;
    }
-    .roadline2 {
+   .live-two-img img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    /* .roadline2 {
         width: 40px;
         margin-top: 250px;
-   }
+   } */
+   .roadline2 {
+    width: 40px;
+    /* margin-top: 250px; */
+}
     .live-one-img {
-        margin-top: 150px;
+        margin-top: 30px;
+   }
+   .roadmap-card p{
+       padding-right: 0;
    }
     .live-two {
-        margin-top: 260px;
+        margin-top: 90px;
    }
+   .baby-two-img img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: auto;
+        text-align: center;
+    }
     .live-two-img {
         margin-top: 90px;
    }
     .live-three {
-        margin-top: 130px;
+        margin-top: 70px;
    }
     .live-three-img {
         margin-top: 160px;
    }
     .live-four {
-        margin-top: 190px !important;
+        margin-top: 135px !important;
    }
     .live-four-img {
         margin-top: 50px;
    }
+   .live-five {
+        margin-top: 270px;
+    }
+    .live-five-img {
+        margin-top: 120px;
+    }
+
     .team-member .team-box h3{
         font-size: 17px;
    }
@@ -948,20 +1173,74 @@ body {
    .roadmap-bg2:before{
         top: 290px;
    }
-
+   .roadmap-gv-bg1{
+       margin-top: -15px;
+   }
+   .team-member .team-box .team-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 80%;
+}
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .join-discord img{
         width: 100%;
    }
+   .team-member .team-box .team-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 80%;
+    }
     .roadmap-sl-bg1{
         background-size: 100% 100%;
    }
+   .presale-two {
+        margin-top: 40px;
+    }
+    .presale-two-img {
+        margin-top: 170px;
+    }
+    .presale-three {
+        margin-top: 120px !important;
+    }
+    .men-one {
+        margin-top: 60px;
+    }
+    .live-two {
+        margin-top: 65px;
+    }
+    .baby-two-img {
+        margin-top: 170px;
+    }
+    .live-three {
+        margin-top: 35px;
+    }
+    .live-one-img {
+        margin-top: 80px;
+    }
+    .live-four {
+        margin-top: 145px !important;
+    }    
+    .live-five-img {
+        margin-top: 120px;
+    }
+    .live-five {
+        margin-top: 265px;
+    }
+
+
 }
 @media (min-width: 1480px) and (max-width: 5120px){
    /* .container{
         width: 1440px !important 
    }
     */
+    .about-us p {
+        text-align: center;
+        font-size: 23px;
+        line-height: 42px;
+        width: 100%;
+        margin: 30px auto;
+    }
 }
