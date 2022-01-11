@@ -41,9 +41,9 @@ $('document').ready(function() {
     $(window).scroll(function() {
         var pixs = $(window).scrollTop();
         console.log("pixel is " + pixs);
-        if(pixs >= 1800)
+        if(pixs >= 2500)
         {
-          pixs = pixs-1799;
+          pixs = pixs-2499;
           if (pixs > $(".roadline").height() -50)
           {
               pixs = $(".roadline").height() -50;
@@ -55,8 +55,8 @@ $('document').ready(function() {
 
   $(window).scroll(function() {
       var scroll = $(window).scrollTop();
-      if (scroll >= 3100) {
-          scroll = scroll-3099;
+      if (scroll >= 3800) {
+          scroll = scroll-3799;
           console.log("scroll" + scroll)
           if (scroll > $(".roadline2").height() -50)
           {
